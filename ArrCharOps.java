@@ -134,7 +134,7 @@ public class ArrCharOps {
         int i = 0;
         int hash = 0;
         for(int n = arr.length - 1; n >= 0; n--){
-            hash = hash + arr[i] * (Math.powExact(7,n));
+            hash = hash + arr[i] * (powerInt(7,n));
             i++;
         }    
     
@@ -187,4 +187,15 @@ public class ArrCharOps {
         
         return 0;
     }
+    public static int powerInt(int base, int power) {
+    if (power == 0) {
+        return 1; 
+    }
+    int result = base;
+
+    for (int i = 1; i < power; i++) {
+        result = result * base;
+    }
+    return result;
+}
 }
