@@ -1,6 +1,6 @@
 public class Primes {
     public static void main(String[] args) {
-        int num = Integer.parseInt(args());
+        int num = Integer.parseInt(args[0]);
         boolean[] arr = new boolean[num + 1];
 
         for (int i = 2; i < arr.length; i++) {
